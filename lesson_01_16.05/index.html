@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!-- Объявление формата документа -->
+<html>
+
+<head> <!-- Техническая информация о документе -->
+    <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
+    <title>JS</title> <!-- Задаем заголовок документа -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Подключаем внешнюю таблицу стилей -->
+
+    <script src="script.js"> </script> <!-- Подключаем сценарии -->
+    <script src="index.js"> </script>
+    <style>
+        .move_block {
+            position: fixed;
+            left: 100px;
+            top: 100px;
+
+            height: 100px;
+            width: 100px;
+
+            background-color: red;
+            /* transition-duration: 1s;
+            transition-delay: .3s;
+            transition-timing-function: cubic-bezier(0.08, 2, 0.93, -1.94); */
+        }
+
+        .move_block:hover {
+            left: 50px;
+            top: 50px;
+
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+
+</head>
+
+<body> <!-- Основная часть документа -->
+
+    
+
+    <div class="move_block" id="move_block"> </div>
+
+    <button onclick="changeColor();">Сменить цвет фона</button>
+
+
+</body>
+
+</html>
