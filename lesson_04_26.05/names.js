@@ -11,7 +11,7 @@ function printNamesWithLength(...names)
 {   // Используем for...of для перебора всех переданных имен
     for (const name of names) 
         {        
-        alert(`${name} + {${name.length}}`);// Выводим в консоль имя и его длину
+        alert(`${name} - ${name.length}`);// Выводим в консоль имя и его длину
     }
 }
 // 3. Вызываем функцию с оператором расширения
@@ -36,6 +36,6 @@ function name_l(...mas) {
     }
 }
 
-const names1 = ["den", "sveta", "sasha"]
+const names1 = ["Denis", "Vasya", "Ivan"]
 
 name_l(...names1)
