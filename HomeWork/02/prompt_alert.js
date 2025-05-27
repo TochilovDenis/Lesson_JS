@@ -15,22 +15,22 @@ alert(`Тебе ${age} лет!`); // Тебе 100 лет!
 let birthYear = prompt("Введите год вашего рождения: ");
 
 // Текущий год сохраняем в константу
-const currentYear = 2025;
+//const currentYear = 2025;
+let currentYear = new Date().getFullYear();
 
-// Проверяем, что пользователь ввел число
-if (!isNaN(birthYear) && birthYear >= 1900 && birthYear <= currentYear)
-    {
-        // Вычисляем возраст
-        let age1 = currentYear - birthYear;
+// Проверяем, что пользователь ввел число и оно в допустимом диапазоне
+if (!isNaN(birthYear) && birthYear >= 1900 && birthYear <= currentYear) {
+    // Преобразуем строку в число
+    birthYear = Number(birthYear);
     
-        // Выводим результат
-        alert("Ваш возраст: " + age1 + " лет");
-    } 
-else
-    {
-        alert("Пожалуйста, введите корректный год рождения!");
-    }
-
+    // Вычисляем возраст
+    let age1 = currentYear - birthYear;
+    
+    // Выводим результат
+    alert("Ваш возраст: " + age1 + " лет");
+} else {
+    alert("Пожалуйста, введите корректный год рождения!");
+}
 /**********************************************/
 
 // Запрашиваем сумму в долларах у пользователя
